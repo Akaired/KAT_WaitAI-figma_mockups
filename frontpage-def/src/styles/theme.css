@@ -1,0 +1,52 @@
+@import url('./fonts.css');
+
+:root {
+  --color-pink: #FF6B9D;
+  --color-purple: #A855F7;
+  --color-blue: #3B82F6;
+  --color-black: #0A0A0A;
+  --color-white: #FFFFFF;
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-brand: 'Bagel Fat One', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+/* Bootstrap override */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-pink), var(--color-purple)) !important;
+  border: none !important;
+  color: var(--color-white) !important;
+  font-weight: 600 !important;
+  padding: 1rem 2rem !important;
+  border-radius: 2px !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3) !important;
+}
+
+.text-primary {
+  color: var(--color-pink) !important;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, var(--color-pink), var(--color-purple)) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-black) !important;
+}
